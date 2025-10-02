@@ -1,21 +1,10 @@
-"use client";
-import type { ActionBtnProps } from "../../common/ActionBtn/types";
-
 import { ActionBtn } from "../../common/ActionBtn/ActionBtn";
-
-const links: Array<ActionBtnProps> = [
-    { label: "SOCIAL MEDIA", link: "/socialmedia", mode: "internal" },
-    {
-        label: "CREACIÓN DE CONTENIDO",
-        link: "/contentcreation",
-        mode: "internal",
-    },
-];
+import { Links } from "./constants";
 
 const ActionBtns = () => {
     return (
-        <div className="w-full absolute bottom-0 flex flex-wrap border justify-center [&>div]:w-1/2 mobile:[&>div]:w-full [&>div]:cursor-pointer [&>div]:flex [&>div]:justify-center">
-            {links.map(({ label, link, mode }) => (
+        <div className="w-full absolute bottom-0 flex flex-wrap justify-center border border-b-0 border-r-0 mobile:border-l-0 [&>div:nth-child(odd)]:border-r mobile:[&>div:nth-child(odd)]:border-r-0">
+            {Links.map(({ label, link, mode }) => (
                 <ActionBtn key={label} label={label} link={link} mode={mode} />
             ))}
         </div>

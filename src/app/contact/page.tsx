@@ -30,7 +30,7 @@ const ConactPage = () => {
             </p>
 
             <div className="w-full absolute bottom-0 flex flex-col">
-                <div className="flex flex-wrap border border-b-0 border-r-0 justify-center [&>div]:w-1/2 mobile:[&>div]:w-full  [&>div]:cursor-pointer [&>div]:flex [&>div]:justify-center">
+                <div className="flex flex-wrap border border-b-0 border-r-0 mobile:border-l-0 justify-center [&>div:nth-child(odd)]:border-r mobile:[&>div:nth-child(odd)]:border-r-0">
                     {footerLinks.map(({ label, link, mode }) => (
                         <ActionBtn
                             key={label}
@@ -40,7 +40,7 @@ const ConactPage = () => {
                         />
                     ))}
                 </div>
-                <div className="flex flex-wrap justify-center [&>div]:w-full  [&>div]:cursor-pointer [&>div]:flex [&>div]:justify-center [&>div]:text-sm ">
+                <div className="flex flex-wrap justify-center [&>div]:w-full [&>div]:text-sm ">
                     <ActionBtn
                         label="DISEÑO Y DESARROLLO X ENEAS BARONI"
                         link="www.eneasbaroni.com.ar"

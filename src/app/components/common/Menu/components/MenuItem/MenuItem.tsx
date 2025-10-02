@@ -17,7 +17,7 @@ export const MenuItem = ({ link, label, closeMenu }: MenuItemProps) => (
     >
         <Link
             href={link}
-            className="mobile:text-sm text-white relative mix-blend-difference z-50 font-thin"
+            className="w-full block mobile:text-sm text-white relative mix-blend-difference z-50 font-thin"
         >
             {label}
         </Link>

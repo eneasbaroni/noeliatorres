@@ -34,11 +34,6 @@ const MenuIcon = ({ toggleMenu, isOpen }: Props) => {
                     stroke={"#fff"}
                 ></motion.path>
             </svg>
-            {/* <img
-                src="/images/common/menuIcon.svg"
-                alt="menu icon"
-                draggable={false}
-            /> */}
         </div>
     );
 };

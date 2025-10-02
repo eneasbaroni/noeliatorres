@@ -11,7 +11,7 @@ const bgAnimation = {
 export const ActionBtn = ({ label, link, mode }: ActionBtnProps) => {
     return (
         <motion.div
-            className="border-r border-b relative"
+            className="border-b relative w-1/2 mobile:w-full cursor-pointer flex justify-center"
             initial="initial"
             whileHover="whileHover"
         >
