@@ -19,10 +19,10 @@ const ConactPage = () => {
                 />
             </div>
             <h1 className="text-9xl tablet:text-7xl mobile:text-5xl w-full text-center text-white">
-                NOELIA TORRES
+                LET&apos;S WORK TOGHETER!
             </h1>
             <p className="max-w-[50rem] p-4 text-lg mobile:text-base text-center text-white [&>span]:font-bold [&>span]:text-xl mobile:[&>span]:text-[12px]">
-                Let&apos;s work togheter! Si no nos divertimos, no vale :)
+                Si no nos divertimos, no vale :)
             </p>
 
             <div className="w-full absolute bottom-0 flex flex-col">
