@@ -2,6 +2,7 @@
 
 import type { WorkItemProps } from "./types";
 import { motion } from "framer-motion";
+import { useState } from "react";
 import {
     containerVariants,
     imgVariants,
@@ -10,13 +11,32 @@ import {
 } from "@/app/constants";
 
 export const WorkItem = ({ id, imgSrc, brand, link }: WorkItemProps) => {
+    const [isActive, setIsActive] = useState(false);
+
+    const handleClick = (e: React.MouseEvent) => {
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            if (!isActive) {
+                setIsActive(true);
+            }
+        }
+    };
+
+    const handleLinkClick = (e: React.MouseEvent) => {
+        if (window.innerWidth <= 768 && !isActive) {
+            e.preventDefault();
+        }
+    };
+
     return (
         <motion.div
             key={id}
             className="group w-1/6 tablet:w-1/3 mobile:w-1/2 h-[50dvh] border relative overflow-hidden p-4 flex flex-col justify-end"
             variants={containerVariants}
             initial="initial"
+            animate={isActive ? "hover" : "initial"}
             whileHover="hover"
+            onClick={handleClick}
         >
             <motion.div className="absolute inset-0 -z-20 overflow-hidden">
                 <motion.img
@@ -36,16 +56,18 @@ export const WorkItem = ({ id, imgSrc, brand, link }: WorkItemProps) => {
                     href={link}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={handleLinkClick}
                 >
                     Ver Contenido →
                 </a>
             </motion.div>
             <motion.a
-                className="absolute inset-0 z-10 bg-gray-900 pointer-events-none group-hover:pointer-events-auto"
+                className="absolute inset-0 z-10 bg-gray-900"
                 variants={divVariants}
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={handleLinkClick}
             />
         </motion.div>
     );
