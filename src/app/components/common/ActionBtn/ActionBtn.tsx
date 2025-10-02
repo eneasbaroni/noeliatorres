@@ -16,7 +16,7 @@ export const ActionBtn = ({ label, link, mode }: ActionBtnProps) => {
             whileHover="whileHover"
         >
             {mode === "internal" ? (
-                <Link href={link} className="w-full text-center">
+                <Link href={link} className="w-full text-center mobile:text-xs">
                     <motion.div
                         className="w-full absolute bottom-0 bg-white mix-blend-difference"
                         variants={bgAnimation}
@@ -28,7 +28,7 @@ export const ActionBtn = ({ label, link, mode }: ActionBtnProps) => {
                     href={link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full text-center"
+                    className="w-full text-center mobile:text-xs"
                 >
                     <motion.div
                         className="w-full absolute bottom-0 bg-white mix-blend-difference"

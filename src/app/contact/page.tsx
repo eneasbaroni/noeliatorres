@@ -3,9 +3,11 @@ import { footerLinks } from "./constants";
 
 const ConactPage = () => {
     return (
-        <main className=" w-full min-h-screen relative flex flex-col items-center justify-center ">
-            <h1 className="text-9xl">NOELIA TORRES</h1>
-            <p className="max-w-[50rem]  text-center [&>span]:font-bold [&>span]:text-xl ">
+        <main className=" w-full min-h-screen pt-12 pb-[8rem] relative flex flex-col items-center justify-center ">
+            <h1 className="text-9xl tablet:text-7xl mobile:text-4xl w-full text-center">
+                NOELIA TORRES
+            </h1>
+            <p className="max-w-[50rem] p-4 mobile:text-sm text-center [&>span]:font-bold [&>span]:text-xl mobile:[&>span]:text-sm">
                 Holi! Soy Noe, creadora de contenido
                 <span> fashion y lifestyle. </span>
                 <br />
