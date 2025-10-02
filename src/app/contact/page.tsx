@@ -5,7 +5,7 @@ import { footerLinks } from "./constants";
 const ConactPage = () => {
     return (
         <main className=" w-full min-h-screen pt-12 pb-[8rem] relative flex flex-col items-center justify-center ">
-            <div className="w-full h-[100vh] fixed top-0 left-0 -z-10 bg-cyan-900/80 opacity-50">
+            <div className="w-full h-[100vh] fixed top-0 left-0 -z-10 bg-cyan-900/80 opacity-70">
                 <Prism
                     animationType="3drotate"
                     timeScale={0.5}
