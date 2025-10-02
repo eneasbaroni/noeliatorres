@@ -2,7 +2,7 @@
 
 import type { WorkItemProps } from "./types";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useWorkItem } from "@/app/hooks";
 import {
     containerVariants,
     imgVariants,
@@ -11,26 +11,12 @@ import {
 } from "@/app/constants";
 
 export const WorkItem = ({ id, imgSrc, brand, link }: WorkItemProps) => {
-    const [isActive, setIsActive] = useState(false);
-
-    const handleClick = (e: React.MouseEvent) => {
-        if (window.innerWidth <= 768) {
-            e.preventDefault();
-            if (!isActive) {
-                setIsActive(true);
-            }
-        }
-    };
-
-    const handleLinkClick = (e: React.MouseEvent) => {
-        if (window.innerWidth <= 768 && !isActive) {
-            e.preventDefault();
-        }
-    };
+    const { isActive, handleClick, handleLinkClick } = useWorkItem(id);
 
     return (
         <motion.div
             key={id}
+            data-item-id={id}
             className="group w-1/6 tablet:w-1/3 mobile:w-1/2 h-[50dvh] border relative overflow-hidden p-4 flex flex-col justify-end"
             variants={containerVariants}
             initial="initial"
@@ -52,7 +38,7 @@ export const WorkItem = ({ id, imgSrc, brand, link }: WorkItemProps) => {
             >
                 <h3 className="text-lg mobile:text-base text-white">{brand}</h3>
                 <a
-                    className="text-sm mobile:text-xs text-white"
+                    className="text-sm mobile:text-xs text-white hover:underline"
                     href={link}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -62,12 +48,11 @@ export const WorkItem = ({ id, imgSrc, brand, link }: WorkItemProps) => {
                 </a>
             </motion.div>
             <motion.a
-                className="absolute inset-0 z-10 bg-gray-900"
+                className="absolute inset-0 z-10 bg-gray-900 [mobile]:pointer-events-none cursor-pointer"
                 variants={divVariants}
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={handleLinkClick}
             />
         </motion.div>
     );

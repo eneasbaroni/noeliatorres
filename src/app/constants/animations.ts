@@ -58,3 +58,13 @@ export const infoVariants = {
         transition: { duration: 0.5 },
     },
 } as const;
+
+export const infoSocialMediaVariants = {
+    initial: {
+        y: "3.3rem",
+    },
+    hover: {
+        y: "0rem",
+        transition: { duration: 0.5 },
+    },
+} as const;
