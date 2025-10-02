@@ -35,9 +35,9 @@ export default function Home() {
                 formaciones de <span>marketing digital</span> y ahora comparto
                 mis outfits para inspirar a los que me ven, pruebo y recomiendo{" "}
                 <span>health & beauty</span>, hablo sobre{" "}
-                <span>tendencias</span> y analizo las fashion weeks.
+                <span>tendencias</span> y analizo las <span>fashion weeks.</span>
                 <br />
-                Además, trabajo como<span> Social Media Manager </span>para
+                Además, trabajo como<span> social media manager </span>para
                 empresas de moda y me divierte la dinámica en equipo, porque
                 así, podemos hacer algo grande, bonito y funcional.
                 <br />
