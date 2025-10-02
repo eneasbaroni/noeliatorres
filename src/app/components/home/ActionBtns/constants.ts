@@ -3,7 +3,7 @@ import { ActionBtnProps } from "../../common/ActionBtn/types";
 export const Links: Array<ActionBtnProps> = [
     { label: "SOCIAL MEDIA", link: "/socialmedia", mode: "internal" },
     {
-        label: "CREACIÓN DE CONTENIDO",
+        label: "CONTENT CREATION",
         link: "/contentcreation",
         mode: "internal",
     },

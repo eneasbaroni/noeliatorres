@@ -8,7 +8,7 @@ export const links = [
         link: "/socialmedia",
     },
     {
-        label: "CREACIÓN DE CONTENIDO",
+        label: "CONTENT CREATION",
         link: "/contentcreation",
     },
     {

@@ -20,9 +20,29 @@ export default function Home() {
             <h1 className="text-9xl tablet:text-7xl mobile:text-5xl w-full text-center">
                 NOELIA TORRES
             </h1>
-            <h2 className="tablet:text-sm mobile:text-xs">
-                Fashion Marketing | Social Media | Content Creator
+            <h2 className="text-xl tablet:text-sm mobile:text-xs">
+                Fashion Marketing | Social Media | Content Creation
             </h2>
+            <p className="max-w-[50rem] p-4 text-sm mobile:text-xs text-center [&>span]:font-bold [&>span]:text-lg mobile:[&>span]:text-xs">
+                Hola! Soy Noe, creadora de contenido
+                <span> fashion y lifestyle. </span>
+                <br />
+                La<span> moda </span>es mi pasión y mi juego favorito desde que
+                a mis 5 años mi mamá me dejó empezar a vestirme sola.
+                <br />
+                El tiempo pasó, estudié <span>diseño de indumentaria</span>,
+                aparecieron las<span> redes sociales, </span>complementé con
+                formaciones de <span>marketing digital</span> y ahora comparto
+                mis outfits para inspirar a los que me ven, pruebo y recomiendo{" "}
+                <span>health & beauty</span>, hablo sobre{" "}
+                <span>tendencias</span> y analizo las fashion weeks.
+                <br />
+                Además, trabajo como<span> Social Media Manager </span>para
+                empresas de moda y me divierte la dinámica en equipo, porque
+                así, podemos hacer algo grande, bonito y funcional.
+                <br />
+                Let&apos;s work together! Si no nos divertimos, no vale :)
+            </p>
             <ActionBtns />
         </main>
     );

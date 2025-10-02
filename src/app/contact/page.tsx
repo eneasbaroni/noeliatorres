@@ -21,26 +21,8 @@ const ConactPage = () => {
             <h1 className="text-9xl tablet:text-7xl mobile:text-5xl w-full text-center text-white">
                 NOELIA TORRES
             </h1>
-            <p className="max-w-[50rem] p-4 mobile:text-sm text-center text-white [&>span]:font-bold [&>span]:text-xl mobile:[&>span]:text-[12px]">
-                Holi! Soy Noe, creadora de contenido
-                <span> fashion y lifestyle. </span>
-                <br />
-                La<span> moda </span>es mi pasión y mi juego favorito desde que
-                a mis 5 años mi mamá me dejó empezar a vestirme sola, revolver
-                su placard y maquillarme cual maquilladora profesional, ja!
-                <br />
-                El tiempo pasó, estudié <span>diseño de indumentaria</span>,
-                aparecieron las<span> redes sociales, </span>complementé con
-                formaciones de <span>marketing digital</span> y ahora comparto
-                en mis outfits para inspirar a los que me ven, pruebo y
-                recomiendo <span>health & beauty</span>, hablo sobre{" "}
-                <span>tendencias</span> y la Noe nerd analiza cada fashion week.
-                <br />
-                Además, trabajo como<span> Social Media Manager </span>para
-                empresas de moda y me divierte la dinámica en equipo, porque
-                así, podemos hacer algo grande, bonito y funcional.
-                <br />
-                Let&apos;s work together! Si no nos divertimos, no vale :)
+            <p className="max-w-[50rem] p-4 text-lg mobile:text-base text-center text-white [&>span]:font-bold [&>span]:text-xl mobile:[&>span]:text-[12px]">
+                Si no nos divertimos, no vale :)
             </p>
 
             <div className="w-full absolute bottom-0 flex flex-col">
