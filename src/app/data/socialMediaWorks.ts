@@ -2,7 +2,7 @@ export const socialMediaWorks = [
     {
         id: 4,
         title: "Vitnik",
-        year: "2024/2025",
+        year: "2024/25",
         works: ["Social Media"],
         imgSrc: "/images/works/vitnik.png",
         link: "https://www.instagram.com/vitnikoficial",
