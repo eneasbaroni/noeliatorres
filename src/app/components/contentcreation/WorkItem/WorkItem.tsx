@@ -13,7 +13,7 @@ export const WorkItem = ({ id, imgSrc, brand, link }: WorkItemProps) => {
     return (
         <motion.div
             key={id}
-            className="w-1/6 tablet:w-1/3 mobile:w-1/2 h-[50dvh] border relative overflow-hidden p-4 flex flex-col justify-end"
+            className="group w-1/6 tablet:w-1/3 mobile:w-1/2 h-[50dvh] border relative overflow-hidden p-4 flex flex-col justify-end"
             variants={containerVariants}
             initial="initial"
             whileHover="hover"
@@ -41,7 +41,7 @@ export const WorkItem = ({ id, imgSrc, brand, link }: WorkItemProps) => {
                 </a>
             </motion.div>
             <motion.a
-                className="absolute inset-0 z-10 bg-gray-900"
+                className="absolute inset-0 z-10 bg-gray-900 pointer-events-none group-hover:pointer-events-auto"
                 variants={divVariants}
                 href={link}
                 target="_blank"
