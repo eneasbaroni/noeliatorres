@@ -47,7 +47,7 @@ export const WorkItem = ({ id, imgSrc, brand, link }: WorkItemProps) => {
     return (
         <motion.a
             key={id}
-            className="w-1/6 tablet:w-1/3 mobile:w-1/2 h-[50vh] border relative overflow-hidden p-4 flex flex-col justify-end"
+            className="w-1/6 tablet:w-1/3 mobile:w-1/2 h-[50dvh] border relative overflow-hidden p-4 flex flex-col justify-end"
             variants={containerVariants}
             initial="initial"
             whileHover="hover"

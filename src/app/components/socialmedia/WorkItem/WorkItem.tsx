@@ -54,7 +54,7 @@ export const WorkItem = ({
     return (
         <motion.a
             key={id}
-            className="w-1/2 h-[50vh] mobile:w-full border relative overflow-hidden p-4 flex flex-col justify-end"
+            className="w-1/2 h-[50dvh] mobile:w-full border relative overflow-hidden p-4 flex flex-col justify-end"
             variants={containerVariants}
             initial="initial"
             whileHover="hover"
