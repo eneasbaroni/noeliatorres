@@ -1,5 +1,4 @@
 import { ActionBtn } from "../components/common/ActionBtn/ActionBtn";
-import Iridescence from "../components/common/Iridescence/Iridescence";
 import Prism from "../components/common/Prism/Prism";
 import { footerLinks } from "./constants";
 
