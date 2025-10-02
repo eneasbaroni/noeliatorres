@@ -40,8 +40,7 @@ export default function Home() {
                 Además, trabajo como<span> social media manager </span>para
                 empresas de moda y me divierte la dinámica en equipo, porque
                 así, podemos hacer algo grande, bonito y funcional.
-                <br />
-                Let&apos;s work together! Si no nos divertimos, no vale :)
+                
             </p>
             <ActionBtns />
         </main>
