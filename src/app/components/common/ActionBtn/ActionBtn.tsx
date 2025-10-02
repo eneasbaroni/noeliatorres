@@ -11,7 +11,9 @@ const bgAnimation = {
 export const ActionBtn = ({ label, link, mode }: ActionBtnProps) => {
     return (
         <motion.div
-            className="border-b relative w-1/2 mobile:w-full cursor-pointer flex justify-center"
+            className={`border-b relative w-1/2 mobile:w-full cursor-pointer flex justify-center ${
+                mode === "external" && "border-b-white"
+            }`}
             initial="initial"
             whileHover="whileHover"
         >
@@ -28,10 +30,10 @@ export const ActionBtn = ({ label, link, mode }: ActionBtnProps) => {
                     href={link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full text-center mobile:text-xs"
+                    className="w-full text-center mobile:text-xs text-white"
                 >
                     <motion.div
-                        className="w-full absolute bottom-0 bg-white mix-blend-difference"
+                        className="w-full absolute bottom-0 bg-black -z-10"
                         variants={bgAnimation}
                     ></motion.div>
                     <button>{label}</button>

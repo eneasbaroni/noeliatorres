@@ -1,13 +1,28 @@
 import { ActionBtn } from "../components/common/ActionBtn/ActionBtn";
+import Iridescence from "../components/common/Iridescence/Iridescence";
+import Prism from "../components/common/Prism/Prism";
 import { footerLinks } from "./constants";
 
 const ConactPage = () => {
     return (
         <main className=" w-full min-h-screen pt-12 pb-[8rem] relative flex flex-col items-center justify-center ">
-            <h1 className="text-9xl tablet:text-7xl mobile:text-5xl w-full text-center">
+            <div className="w-full h-[100vh] fixed top-0 left-0 -z-10 bg-cyan-900/80 opacity-50">
+                <Prism
+                    animationType="3drotate"
+                    timeScale={0.5}
+                    height={3.5}
+                    baseWidth={5.5}
+                    scale={3.6}
+                    hueShift={0}
+                    colorFrequency={1}
+                    noise={0.01}
+                    glow={1}
+                />
+            </div>
+            <h1 className="text-9xl tablet:text-7xl mobile:text-5xl w-full text-center text-white">
                 NOELIA TORRES
             </h1>
-            <p className="max-w-[50rem] p-4 mobile:text-sm text-center [&>span]:font-bold [&>span]:text-xl mobile:[&>span]:text-[12px]">
+            <p className="max-w-[50rem] p-4 mobile:text-sm text-center text-white [&>span]:font-bold [&>span]:text-xl mobile:[&>span]:text-[12px]">
                 Holi! Soy Noe, creadora de contenido
                 <span> fashion y lifestyle. </span>
                 <br />
@@ -30,7 +45,7 @@ const ConactPage = () => {
             </p>
 
             <div className="w-full absolute bottom-0 flex flex-col">
-                <div className="flex flex-wrap border border-b-0 border-r-0 mobile:border-l-0 justify-center [&>div:nth-child(odd)]:border-r mobile:[&>div:nth-child(odd)]:border-r-0">
+                <div className="flex flex-wrap border border-white border-b-0 border-r-0 mobile:border-l-0 justify-center [&>div:nth-child(odd)]:border-r [&>div:nth-child(odd)]:border-r-white mobile:[&>div:nth-child(odd)]:border-r-0">
                     {footerLinks.map(({ label, link, mode }) => (
                         <ActionBtn
                             key={label}
