@@ -4,7 +4,7 @@ import ActionBtns from "./components/home/ActionBtns/ActionBtns";
 export default function Home() {
     return (
         <main className=" w-full min-h-screen relative flex flex-col items-center justify-center ">
-            <div className="w-full h-[100vh] fixed top-0 left-0 -z-10 opacity-30">
+            <div className="w-full min-h-[100dvh] fixed top-0 left-0 -z-10 opacity-30">
                 <Prism
                     animationType="3drotate"
                     timeScale={0.5}
