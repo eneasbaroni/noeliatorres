@@ -2,7 +2,6 @@
 
 import type { SocialMediaItemProps } from "./types";
 import { motion } from "framer-motion";
-import { useWorkItem } from "@/app/hooks/useWorkItem";
 import {
     containerVariants,
     imgVariants,
@@ -18,18 +17,13 @@ export const WorkItem = ({
     imgSrc,
     link,
 }: SocialMediaItemProps) => {
-    const { isActive, handleClick, handleLinkClick } = useWorkItem(id);
-
     return (
         <motion.div
             key={id}
-            data-item-id={id}
-            className="w-1/2 h-[50dvh] mobile:w-full border relative overflow-hidden p-4 flex flex-col justify-end"
+            className="group w-1/2 h-[50dvh] mobile:w-full border relative overflow-hidden p-4 flex flex-col justify-end"
             variants={containerVariants}
             initial="initial"
-            animate={isActive ? "hover" : "initial"}
             whileHover="hover"
-            onClick={handleClick}
         >
             <motion.div className="absolute inset-0 -z-20 overflow-hidden">
                 <motion.img
@@ -40,7 +34,7 @@ export const WorkItem = ({
                 />
             </motion.div>
             <motion.div
-                className="w-auto flex flex-col z-20"
+                className="w-auto flex flex-col z-20 opacity-0 group-hover:opacity-100 mobile:!opacity-100 mobile:!transform-none"
                 variants={infoSocialMediaVariants}
             >
                 <h3 className="text-xl mobile:text-lg text-white">
@@ -58,13 +52,12 @@ export const WorkItem = ({
                     href={link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={handleLinkClick}
                 >
                     Ver Contenido →
                 </a>
             </motion.div>
             <motion.a
-                className="absolute inset-0 z-10 bg-gray-900 [mobile]:pointer-events-none cursor-pointer"
+                className="absolute inset-0 z-10 bg-gray-900 opacity-0 group-hover:opacity-30 mobile:opacity-30 mobile:pointer-events-none"
                 variants={divVariants}
                 href={link}
                 target="_blank"
