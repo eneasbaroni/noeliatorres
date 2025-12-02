@@ -1,9 +1,45 @@
 export const contentCreationWorks = [
     {
+        id: 13,
+        brand: "Namur",
+        link: "https://www.instagram.com/p/DPkCMekkW5V/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        imgSrc: "/images/works/13.jpg",
+    },
+    {
+        id: 14,
+        brand: "Cuerda",
+        link: "https://www.instagram.com/p/DPZFmZajhbV/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        imgSrc: "/images/works/14.jpg",
+    },
+    {
+        id: 15,
+        brand: "Felisa",
+        link: "https://www.instagram.com/reel/DQesM2YEUGU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        imgSrc: "/images/works/15.jpg",
+    },
+    {
         id: 1,
         brand: "Le Cräb",
         link: "https://www.instagram.com/p/DPPXz6rERnx/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
         imgSrc: "/images/works/01.jpg",
+    },
+    {
+        id: 17,
+        brand: "Zia",
+        link: "https://www.instagram.com/reel/DRK3ocBEctd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        imgSrc: "/images/works/17.jpg",
+    },
+    {
+        id: 18,
+        brand: "Rouxurie",
+        link: "https://www.instagram.com/reel/DRSTFSzlFaK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        imgSrc: "/images/works/18.jpg",
+    },
+    {
+        id: 16,
+        brand: "Felisa",
+        link: "https://www.instagram.com/reel/DRfu1xFDRYA/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        imgSrc: "/images/works/16.jpg",
     },
     {
         id: 2,

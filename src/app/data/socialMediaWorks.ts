@@ -13,7 +13,7 @@ export const socialMediaWorks = [
         year: "2023",
         works: ["Social Media"],
         imgSrc: "/images/works/genes.jpg",
-        link: "https://www.instagram.com/utzzia",
+        link: "https://www.instagram.com/tiendas.genes/",
     },
     {
         id: 1,
