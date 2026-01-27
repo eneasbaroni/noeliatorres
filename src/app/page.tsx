@@ -23,24 +23,24 @@ export default function Home() {
             <h2 className="text-xl tablet:text-sm mobile:text-xs">
                 Fashion Marketing | Social Media | Content Creation
             </h2>
-            <p className="max-w-[50rem] p-4 text-sm mobile:text-xs text-center [&>span]:font-bold [&>span]:text-lg mobile:[&>span]:text-xs">
-                Hola! Soy Noe, creadora de contenido
-                <span> fashion y lifestyle. </span>
+            <p className="max-w-[50rem] p-4 text-sm mobile:text-xs text-center [&>span]:font-bold [&>span]:text-lg mobile:[&>span]:text-xs leading-5 [&>span]:leading-5 mobile:leading-4 mobile:[&>span]:leading-4 ">
+                Hola, soy Noe. Me dedico al <span>fashion marketing</span> y a
+                la <span>creación de contenido</span>. La moda es mi lenguaje
+                desde siempre. Estudié diseño de indumentaria, me formé en{" "}
+                <span>marketing digital</span> y encontré en las redes el
+                espacio ideal.
                 <br />
-                La<span> moda </span>es mi pasión y mi juego favorito desde que
-                a mis 5 años mi mamá me dejó empezar a vestirme sola.
+                Hoy creo contenido <span>fashion & lifestyle</span> con una
+                mirada curada y consciente. Comparto outfits, pruebo y
+                recomiendo beauty & health y analizo lo que pasa en el mundo de
+                la moda.
                 <br />
-                El tiempo pasó, estudié <span>diseño de indumentaria</span>,
-                aparecieron las<span> redes sociales, </span>complementé con
-                formaciones de <span>marketing digital</span> y ahora comparto
-                mis outfits para inspirar a los que me ven, pruebo y recomiendo{" "}
-                <span>health & beauty</span>, hablo sobre{" "}
-                <span>tendencias</span> y analizo las <span>fashion weeks.</span>
-                <br />
-                Además, trabajo como<span> social media manager </span>para
-                empresas de moda y me divierte la dinámica en equipo, porque
-                así, podemos hacer algo grande, bonito y funcional.
-                
+                Trabajo como <span>social media manager</span> y{" "}
+                <span>estratega de contenido</span> para empresas de{" "}
+                <span>moda</span>, y colaboro con proyectos freelance que buscan
+                construir una identidad sólida, coherente y relevante. Me motiva
+                el trabajo en equipo y la idea de crear algo grande, bonito y
+                funcional.
             </p>
             <ActionBtns />
         </main>
