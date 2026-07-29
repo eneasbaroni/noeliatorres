@@ -2,11 +2,7 @@
 import { motion } from "motion/react";
 import Link from "next/link";
 import { ActionBtnProps } from "./types";
-
-const bgAnimation = {
-    initial: { height: 0 },
-    whileHover: { height: "100%" },
-};
+import { bgAnimation } from "@/app/constants";
 
 export const ActionBtn = ({ label, link, mode }: ActionBtnProps) => {
     return (

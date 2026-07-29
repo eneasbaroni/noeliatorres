@@ -68,3 +68,17 @@ export const infoSocialMediaVariants = {
         transition: { duration: 0.5 },
     },
 } as const;
+
+export const typeVariants = {
+    initial: { y: "-100%", opacity: 0 },
+    hover: {
+        y: "0%",
+        opacity: 1,
+        transition: { duration: 0.3 },
+    },
+};
+
+export const bgAnimation = {
+    initial: { height: 0 },
+    whileHover: { height: "100%" },
+};

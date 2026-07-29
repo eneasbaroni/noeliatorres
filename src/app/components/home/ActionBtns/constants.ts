@@ -1,9 +1,9 @@
 import { ActionBtnProps } from "../../common/ActionBtn/types";
 
 export const Links: Array<ActionBtnProps> = [
-    { label: "SOCIAL MEDIA", link: "/socialmedia", mode: "internal" },
+    { label: "EXPERTISE", link: "/socialmedia", mode: "internal" },
     {
-        label: "CONTENT CREATION",
+        label: "PORTFOLIO",
         link: "/contentcreation",
         mode: "internal",
     },

@@ -30,17 +30,14 @@ export default function Home() {
                 <span>marketing digital</span> y encontré en las redes el
                 espacio ideal.
                 <br />
-                Hoy creo contenido <span>fashion & lifestyle</span> con una
-                mirada curada y consciente. Comparto outfits, pruebo y
-                recomiendo beauty & health y analizo lo que pasa en el mundo de
-                la moda.
+                Hoy creo contenido <span>fashion, beauty y lifestyle</span> con
+                una mirada curada y consciente. Comparto outfits y analizo lo
+                que pasa en el mundo de la moda.
                 <br />
                 Trabajo como <span>social media manager</span> y{" "}
                 <span>estratega de contenido</span> para empresas de{" "}
-                <span>moda</span>, y colaboro con proyectos freelance que buscan
-                construir una identidad sólida, coherente y relevante. Me motiva
-                el trabajo en equipo y la idea de crear algo grande, bonito y
-                funcional.
+                <span>moda</span>, y colaboro con <span>marcas</span> que buscan
+                construir una identidad sólida, coherente y relevante.
             </p>
             <ActionBtns />
         </main>

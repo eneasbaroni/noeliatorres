@@ -7,9 +7,10 @@ import {
     imgVariants,
     divVariants,
     infoVariants,
+    typeVariants,
 } from "@/app/constants";
 
-export const WorkItem = ({ id, imgSrc, brand, link }: WorkItemProps) => {
+export const WorkItem = ({ id, imgSrc, brand, link, type }: WorkItemProps) => {
     return (
         <motion.div
             key={id}
@@ -25,6 +26,14 @@ export const WorkItem = ({ id, imgSrc, brand, link }: WorkItemProps) => {
                     className="w-full h-full object-cover origin-center"
                     variants={imgVariants}
                 />
+            </motion.div>
+            <motion.div
+                className="absolute top-4 left-4 z-20 opacity-0 group-hover:opacity-100 mobile:!opacity-100 mobile:!transform-none overflow-hidden"
+                variants={typeVariants}
+            >
+                <span className="text-xs uppercase tracking-wide text-white">
+                    {type}
+                </span>
             </motion.div>
             <motion.div
                 className="w-auto flex flex-col z-20 opacity-0 group-hover:opacity-100 mobile:!opacity-100 mobile:!transform-none"

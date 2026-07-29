@@ -4,11 +4,11 @@ export const links = [
         link: "/",
     },
     {
-        label: "SOCIAL MEDIA",
+        label: "EXPERTISE",
         link: "/socialmedia",
     },
     {
-        label: "CONTENT CREATION",
+        label: "PORTFOLIO",
         link: "/contentcreation",
     },
     {
