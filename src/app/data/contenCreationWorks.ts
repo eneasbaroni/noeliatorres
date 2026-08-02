@@ -1,4 +1,4 @@
-import type { WorkItemProps } from "../components/contentcreation/WorkItem/types";
+import type { WorkItemProps } from "../components/portfolio/WorkItem/types";
 
 export const contentCreationWorks: WorkItemProps[] = [
     {

@@ -5,11 +5,11 @@ export const links = [
     },
     {
         label: "EXPERTISE",
-        link: "/socialmedia",
+        link: "/expertise",
     },
     {
         label: "PORTFOLIO",
-        link: "/contentcreation",
+        link: "/portfolio",
     },
     {
         label: "CONTACTO",

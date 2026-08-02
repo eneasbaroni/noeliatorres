@@ -1,7 +1,7 @@
 "use client";
 
-import { WorkItem } from "../components/contentcreation";
-import { WorkFilter } from "../components/contentcreation";
+import { WorkItem } from "../components/portfolio";
+import { WorkFilter } from "../components/portfolio";
 import { useWorkFilter } from "../hooks/useWorkFilter";
 import { contentCreationWorks } from "../data/contenCreationWorks";
 

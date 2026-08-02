@@ -82,3 +82,13 @@ export const bgAnimation = {
     initial: { height: 0 },
     whileHover: { height: "100%" },
 };
+
+export const textSwapVariants = {
+    initial: { y: 0 },
+    hover: { y: "-100%" },
+};
+
+export const textSwapUpVariants = {
+    initial: { y: "100%" },
+    hover: { y: 0 },
+};

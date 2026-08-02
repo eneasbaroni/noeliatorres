@@ -1,5 +1,5 @@
 import { socialMediaWorks } from "../data/socialMediaWorks";
-import { WorkItem } from "../components/socialmedia";
+import { WorkItem } from "../components/expertise";
 
 const SocialMediaPage = () => {
     return (
