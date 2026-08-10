@@ -7,7 +7,7 @@ import { motion } from "motion/react";
 
 export const WorkFilter = ({ activeFilter, onChange }: WorkFilterProps) => {
     return (
-        <div className="fixed top-4 mobile:top-auto mobile:bottom-4 left-0 right-0 z-30 w-full flex justify-center">
+        <div className="fixed top-4 mobile:top-auto mobile:bottom-4 left-0 right-0 z-50 w-full flex justify-center">
             <div className="flex bg-white/40 backdrop-blur-sm border border-black/80 border-r-0">
                 {FILTERS.map((filter) => (
                     <motion.div

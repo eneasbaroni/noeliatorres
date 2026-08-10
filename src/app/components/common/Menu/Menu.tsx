@@ -8,7 +8,7 @@ import { menuAnim, transition } from "@/app/constants";
 const Menu = ({ active, closeMenu }: MenuProps) => {
     return (
         <motion.div
-            className="fixed w-full h-screen flex flex-col justify-center items-center bg-black z-50"
+            className="fixed w-full h-screen flex flex-col justify-center items-center bg-black z-60"
             variants={menuAnim}
             initial="initial"
             animate={active ? "animate" : "exit"}
