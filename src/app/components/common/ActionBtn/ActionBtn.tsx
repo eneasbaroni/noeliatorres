@@ -7,7 +7,7 @@ import { bgAnimation } from "@/app/constants";
 export const ActionBtn = ({ label, link, mode }: ActionBtnProps) => {
     return (
         <motion.div
-            className={`border-b relative w-1/2 mobile:w-full cursor-pointer flex justify-center ${
+            className={`border-b relative w-1/2 mobile:h-6 mobile:items-center mobile:w-full cursor-pointer flex justify-center ${
                 mode === "external" && "border-b-white"
             }`}
             initial="initial"
