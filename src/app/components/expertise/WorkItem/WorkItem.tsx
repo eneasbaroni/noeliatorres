@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import type { SocialMediaItemProps } from "./types";
 import { motion } from "framer-motion";
 import {
@@ -8,6 +9,8 @@ import {
     divVariants,
     infoSocialMediaVariants,
 } from "@/app/constants";
+
+const MotionImage = motion.create(Image);
 
 export const WorkItem = ({
     id,
@@ -26,10 +29,12 @@ export const WorkItem = ({
             whileHover="hover"
         >
             <motion.div className="absolute inset-0 -z-20 overflow-hidden">
-                <motion.img
+                <MotionImage
                     src={imgSrc}
                     alt={title}
-                    className="w-full h-full object-cover origin-center"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover origin-center"
                     variants={imgVariants}
                 />
             </motion.div>

@@ -2,6 +2,76 @@ import type { WorkItemProps } from "../components/portfolio/WorkItem/types";
 
 export const contentCreationWorks: WorkItemProps[] = [
     {
+        id: 27,
+        brand: "Valetino Beauty",
+        link: "https://www.instagram.com/reel/DcRnHNRpJp2/?stkn=NTc4MTIwNjQ2YQ==",
+        imgSrc: "/images/works/27.jpg",
+        type: "beauty",
+    },
+    {
+        id: 21,
+        brand: "Amara",
+        link: "https://www.instagram.com/p/DbV0TFRDiDl/?stkn=NTc4MTIwNjQ2YQ==",
+        imgSrc: "/images/works/21.jpg",
+        type: "fashion",
+    },
+    {
+        id: 26,
+        brand: "Zia",
+        link: "https://www.instagram.com/reel/DZ0FxxWN3h-/?stkn=NTc4MTIwNjQ2YQ==",
+        imgSrc: "/images/works/26.jpg",
+        type: "beauty",
+    },
+    {
+        id: 22,
+        brand: "L'Oréal",
+        link: "https://www.instagram.com/reel/DZXs0dsRRD4/?stkn=NTc4MTIwNjQ2YQ==",
+        imgSrc: "/images/works/22.jpg",
+        type: "beauty",
+    },
+    {
+        id: 24,
+        brand: "Zia",
+        link: "https://www.instagram.com/reel/DaiJtNVh2ft/?stkn=NTc4MTIwNjQ2YQ==",
+        imgSrc: "/images/works/24.jpg",
+        type: "beauty",
+    },
+    {
+        id: 18,
+        brand: "Rouxurie",
+        link: "https://www.instagram.com/reel/DRSTFSzlFaK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        imgSrc: "/images/works/18.jpg",
+        type: "fashion",
+    },
+    {
+        id: 3,
+        brand: "Badgal",
+        link: "https://www.instagram.com/p/DN-6PJVji-Z/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        imgSrc: "/images/works/03.jpg",
+        type: "fashion",
+    },
+    {
+        id: 20,
+        brand: "Zia",
+        link: "https://www.instagram.com/reel/DbEdcIBvfzf/?stkn=NTc4MTIwNjQ2YQ==",
+        imgSrc: "/images/works/20.jpg",
+        type: "beauty",
+    },
+    {
+        id: 1,
+        brand: "Le Cräb",
+        link: "https://www.instagram.com/p/DPPXz6rERnx/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        imgSrc: "/images/works/01.jpg",
+        type: "fashion",
+    },
+    {
+        id: 19,
+        brand: "Zia",
+        link: "https://www.instagram.com/reel/Db81jQ5OHW2/?stkn=NTc4MTIwNjQ2YQ==",
+        imgSrc: "/images/works/19.jpg",
+        type: "beauty",
+    },
+    {
         id: 13,
         brand: "Namur",
         link: "https://www.instagram.com/p/DPkCMekkW5V/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
@@ -23,25 +93,11 @@ export const contentCreationWorks: WorkItemProps[] = [
         type: "fashion",
     },
     {
-        id: 1,
-        brand: "Le Cräb",
-        link: "https://www.instagram.com/p/DPPXz6rERnx/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-        imgSrc: "/images/works/01.jpg",
-        type: "fashion",
-    },
-    {
         id: 17,
         brand: "Zia",
         link: "https://www.instagram.com/reel/DRK3ocBEctd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
         imgSrc: "/images/works/17.jpg",
         type: "beauty",
-    },
-    {
-        id: 18,
-        brand: "Rouxurie",
-        link: "https://www.instagram.com/reel/DRSTFSzlFaK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-        imgSrc: "/images/works/18.jpg",
-        type: "fashion",
     },
     {
         id: 16,
@@ -57,13 +113,7 @@ export const contentCreationWorks: WorkItemProps[] = [
         imgSrc: "/images/works/02.jpg",
         type: "fashion",
     },
-    {
-        id: 3,
-        brand: "Badgal",
-        link: "https://www.instagram.com/p/DN-6PJVji-Z/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-        imgSrc: "/images/works/03.jpg",
-        type: "fashion",
-    },
+
     {
         id: 4,
         brand: "Tejano",
@@ -106,13 +156,13 @@ export const contentCreationWorks: WorkItemProps[] = [
         imgSrc: "/images/works/09.jpg",
         type: "fashion",
     },
-    {
+    /* {
         id: 10,
         brand: "La Juanas",
         link: "https://www.instagram.com/reel/DHuNnH4Rtqa/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
         imgSrc: "/images/works/10.jpg",
         type: "fashion",
-    },
+    }, */
     {
         id: 11,
         brand: "Tejano",

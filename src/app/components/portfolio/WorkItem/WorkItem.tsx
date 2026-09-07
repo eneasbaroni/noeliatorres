@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import type { WorkItemProps } from "./types";
 import { motion } from "framer-motion";
 import {
@@ -12,6 +13,8 @@ import {
     textSwapVariants,
     textSwapUpVariants,
 } from "@/app/constants";
+
+const MotionImage = motion.create(Image);
 
 export const WorkItem = ({ id, imgSrc, brand, link, type }: WorkItemProps) => {
     const [isTextHovered, setIsTextHovered] = useState(false);
@@ -31,10 +34,12 @@ export const WorkItem = ({ id, imgSrc, brand, link, type }: WorkItemProps) => {
                 className="absolute inset-0 z-30 flex flex-col justify-end p-4"
             >
                 <motion.div className="absolute inset-0 -z-20 overflow-hidden">
-                    <motion.img
+                    <MotionImage
                         src={imgSrc}
                         alt="Portada de trabajo"
-                        className="w-full h-full object-cover origin-center"
+                        fill
+                        sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 16vw"
+                        className="object-cover origin-center"
                         variants={imgVariants}
                     />
                 </motion.div>
