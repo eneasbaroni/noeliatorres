@@ -1,7 +1,7 @@
 import { Instrument_Serif } from "next/font/google";
 import Prism from "./components/common/Prism/Prism";
 import ActionBtns from "./components/home/ActionBtns/ActionBtns";
-import NameReveal from "./components/home/NameReveal/NameReveal";
+import { HoverWeightText } from "./components/common/HoverWeightText/HoverWeightText";
 import { groteskVariable } from "./fonts";
 
 const serifAccent = Instrument_Serif({
@@ -27,7 +27,10 @@ export default function Home() {
                     glow={1}
                 />
             </div>
-            <NameReveal />
+            <HoverWeightText
+                text="NOELIA TORRES"
+                className="text-9xl tablet:text-7xl mobile:text-5xl w-full text-center tracking-tight"
+            />
             <h2
                 className={`${groteskVariable.className} text-xl tablet:text-sm mobile:text-xs`}
             >

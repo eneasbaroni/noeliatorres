@@ -11,7 +11,6 @@ import {
 } from "motion/react";
 import { groteskVariable } from "@/app/fonts";
 
-const NAME = "NOELIA TORRES";
 const PROXIMITY_RADIUS = 220;
 const WEIGHT_FAR = 300;
 const WEIGHT_NEAR = 700;
@@ -77,7 +76,12 @@ const Letter = ({ char, mouseX, mouseY }: LetterProps) => {
     );
 };
 
-const NameReveal = () => {
+type HoverWeightTextProps = {
+    text: string;
+    className?: string;
+};
+
+export const HoverWeightText = ({ text, className }: HoverWeightTextProps) => {
     const mouseX = useMotionValue(-1000);
     const mouseY = useMotionValue(-1000);
 
@@ -91,15 +95,21 @@ const NameReveal = () => {
     }, [mouseX, mouseY]);
 
     return (
-        <h1
-            className="text-9xl tablet:text-7xl mobile:text-5xl w-full text-center tracking-tight"
-            aria-label={NAME}
-        >
-            {NAME.split("").map((char, i) => (
-                <Letter key={i} char={char} mouseX={mouseX} mouseY={mouseY} />
+        <h1 className={className} aria-label={text.replace(/\n/g, " ")}>
+            {text.split("\n").map((line, li) => (
+                <span key={li} className="block">
+                    {line.split("").map((char, i) => (
+                        <Letter
+                            key={i}
+                            char={char}
+                            mouseX={mouseX}
+                            mouseY={mouseY}
+                        />
+                    ))}
+                </span>
             ))}
         </h1>
     );
 };
 
-export default NameReveal;
+export default HoverWeightText;
