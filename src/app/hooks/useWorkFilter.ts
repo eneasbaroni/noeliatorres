@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 
-export type FilterType = "all" | "fashion" | "beauty";
+export type FilterType = "all" | "fashion" | "beauty" | "events";
 
 interface WorkWithType {
     type: string;

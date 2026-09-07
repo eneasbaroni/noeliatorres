@@ -3,5 +3,5 @@ export type WorkItemProps = {
     brand: string;
     link: string;
     imgSrc: string;
-    type: "fashion" | "beauty";
+    type: "fashion" | "beauty" | "events";
 };

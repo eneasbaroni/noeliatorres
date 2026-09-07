@@ -2,6 +2,13 @@ import type { WorkItemProps } from "../components/portfolio/WorkItem/types";
 
 export const contentCreationWorks: WorkItemProps[] = [
     {
+        id: 29,
+        brand: "Pepsi",
+        link: "https://www.instagram.com/reel/DcrYqbWJ1nH/?stkn=NTc4MTIwNjQ2YQ==",
+        imgSrc: "/images/works/29.png",
+        type: "events",
+    },
+    {
         id: 27,
         brand: "Valetino Beauty",
         link: "https://www.instagram.com/reel/DcRnHNRpJp2/?stkn=NTc4MTIwNjQ2YQ==",
