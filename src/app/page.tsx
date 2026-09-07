@@ -1,5 +1,14 @@
+import { Instrument_Serif } from "next/font/google";
 import Prism from "./components/common/Prism/Prism";
 import ActionBtns from "./components/home/ActionBtns/ActionBtns";
+import NameReveal from "./components/home/NameReveal/NameReveal";
+
+const serifAccent = Instrument_Serif({
+    subsets: ["latin"],
+    weight: "400",
+    style: "italic",
+    variable: "--font-serif-accent",
+});
 
 export default function Home() {
     return (
@@ -17,13 +26,13 @@ export default function Home() {
                     glow={1}
                 />
             </div>
-            <h1 className="text-9xl tablet:text-7xl mobile:text-5xl w-full text-center">
-                NOELIA TORRES
-            </h1>
+            <NameReveal />
             <h2 className="text-xl tablet:text-sm mobile:text-xs">
                 Fashion Marketing | Social Media | Content Creation
             </h2>
-            <p className="max-w-[50rem] p-4 text-sm mobile:text-xs text-center [&>span]:font-bold [&>span]:text-lg mobile:[&>span]:text-xs leading-5 [&>span]:leading-5 mobile:leading-4 mobile:[&>span]:leading-4 ">
+            <p
+                className={`${serifAccent.variable} max-w-[50rem] p-4 text-xs mobile:text-[11px] text-center [&>span]:font-[family-name:var(--font-serif-accent)] [&>span]:italic [&>span]:text-base mobile:[&>span]:text-sm leading-4 [&>span]:leading-4 mobile:leading-4 mobile:[&>span]:leading-4 `}
+            >
                 Hola, soy Noe. Me dedico al <span>fashion marketing</span> y a
                 la <span>creación de contenido</span>. La moda es mi lenguaje
                 desde siempre. Estudié diseño de indumentaria, me formé en{" "}
