@@ -9,12 +9,12 @@ import {
     useTransform,
     type MotionValue,
 } from "motion/react";
-import { archivoVariable } from "@/app/fonts";
+import { groteskVariable } from "@/app/fonts";
 
 const NAME = "NOELIA TORRES";
 const PROXIMITY_RADIUS = 220;
-const WEIGHT_FAR = 400;
-const WEIGHT_NEAR = 900;
+const WEIGHT_FAR = 300;
+const WEIGHT_NEAR = 700;
 
 type LetterProps = {
     char: string;
@@ -69,7 +69,7 @@ const Letter = ({ char, mouseX, mouseY }: LetterProps) => {
     return (
         <motion.span
             ref={ref}
-            className={`${archivoVariable.className} inline-block`}
+            className={`${groteskVariable.className} inline-block`}
             style={{ fontVariationSettings }}
         >
             {char}
@@ -92,7 +92,7 @@ const NameReveal = () => {
 
     return (
         <h1
-            className="text-9xl tablet:text-7xl mobile:text-5xl w-full text-center"
+            className="text-9xl tablet:text-7xl mobile:text-5xl w-full text-center tracking-tight"
             aria-label={NAME}
         >
             {NAME.split("").map((char, i) => (

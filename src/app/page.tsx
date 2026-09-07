@@ -2,6 +2,7 @@ import { Instrument_Serif } from "next/font/google";
 import Prism from "./components/common/Prism/Prism";
 import ActionBtns from "./components/home/ActionBtns/ActionBtns";
 import NameReveal from "./components/home/NameReveal/NameReveal";
+import { groteskVariable } from "./fonts";
 
 const serifAccent = Instrument_Serif({
     subsets: ["latin"],
@@ -27,7 +28,9 @@ export default function Home() {
                 />
             </div>
             <NameReveal />
-            <h2 className="text-xl tablet:text-sm mobile:text-xs">
+            <h2
+                className={`${groteskVariable.className} text-xl tablet:text-sm mobile:text-xs`}
+            >
                 Fashion Marketing | Social Media | Content Creation
             </h2>
             <p
